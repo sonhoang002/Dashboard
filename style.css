@@ -434,3 +434,9 @@ img[alt="profile-pic-user"] {
     flex-direction: column;
     justify-content: center;
 }
+
+@media (min-width: 1850px) {
+    .everything {
+        width: 90vw;
+    }
+}
