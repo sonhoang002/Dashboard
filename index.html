@@ -28,12 +28,14 @@
 
         <div class="header">
             <div class="search-name">
-                <div class="search-icon-bar">
-                    <button id="search-icon"><img src="img/search-24px.png" alt="Search.icon" height="15px" width="15px"></button>
-                    <input type="search" id="search-bar">
-                </div>
+                <form action="">
+                    <div class="search-icon-bar">
+                        <button id="search-icon" type="submit"><img src="img/search-24px.png" alt="Search.icon" height="15px" width="15px"></button>
+                        <input type="search" id="search-bar">
+                    </div>
+                </form>
                 <div id="user-loggin-topright">
-                    <img src="img/bell.svg" alt="" height="25px" width="25px">
+                    <div class="bell-icon"></div>
                     <img src="img/2560.avif" alt="profile-pic-user" id="user-img-smaller">
                     <div class="username" id="topright">Something</div>
                 </div>
@@ -61,8 +63,8 @@
                 <div class="your-project-contents-layout">
                     <div class="project-container">
                         <div class="project-contents">
-                            <div class="project-header">Project #1</div>
-                            <div class="project-body">Trying to create something really long and time consuming to do such as, a whole interactable dashboard. The dashboard will includes many features, resizable, functioning buttons, etc</div>
+                            <div class="pat-header">Project #1</div>
+                            <div class="pat-body">Trying to create something really long and time consuming to do such as, a whole interactable dashboard. The dashboard will includes many features, resizable, functioning buttons, etc</div>
                         </div>    
                         <div class="project-status-icons">
                             <img src="img/star-plus-outline.svg" alt="fav-icon" id="group-icons">
@@ -73,8 +75,8 @@
 
                     <div class="project-container">
                         <div class="project-contents">
-                            <div class="project-header">Project #2</div>
-                            <div class="project-body">Trying to create something really long and time consuming to do such as, a whole interactable dashboard. The dashboard will includes many features, resizable, functioning buttons, etc</div>
+                            <div class="pat-header">Project #2</div>
+                            <div class="pat-body">Trying to create something really long and time consuming to do such as, a whole interactable dashboard. The dashboard will includes many features, resizable, functioning buttons, etc</div>
                         </div>
                         <div class="project-status-icons">
                             <img src="img/star-plus-outline.svg" alt="fav-icon" id="group-icons">
@@ -85,8 +87,8 @@
 
                     <div class="project-container">
                         <div class="project-contents">
-                            <div class="project-header">Project #2</div>
-                            <div class="project-body">Trying to create something really long and time consuming to do such as, a whole interactable dashboard. The dashboard will includes many features, resizable, functioning buttons, etc</div>
+                            <div class="pat-header">Project #2</div>
+                            <div class="pat-body">Trying to create something really long and time consuming to do such as, a whole interactable dashboard. The dashboard will includes many features, resizable, functioning buttons, etc</div>
                         </div>
                         <div class="project-status-icons">
                             <img src="img/star-plus-outline.svg" alt="fav-icon" id="group-icons">
@@ -97,8 +99,8 @@
 
                     <div class="project-container">
                         <div class="project-contents">
-                            <div class="project-header">Project #4</div>
-                            <div class="project-body">Trying to create something really long and time consuming to do such as, a whole interactable dashboard. The dashboard will includes many features, resizable, functioning buttons, etc</div>
+                            <div class="pat-header">Project #4</div>
+                            <div class="pat-body">Trying to create something really long and time consuming to do such as, a whole interactable dashboard. The dashboard will includes many features, resizable, functioning buttons, etc</div>
                         </div>
                         <div class="project-status-icons">
                             <img src="img/star-plus-outline.svg" alt="fav-icon" id="group-icons">
@@ -109,8 +111,8 @@
 
                     <div class="project-container">
                         <div class="project-contents">
-                            <div class="project-header">Project #5</div>
-                            <div class="project-body">Trying to create something really long and time consuming to do such as, a whole interactable dashboard. The dashboard will includes many features, resizable, functioning buttons, etc</div>
+                            <div class="pat-header">Project #5</div>
+                            <div class="pat-body">Trying to create something really long and time consuming to do such as, a whole interactable dashboard. The dashboard will includes many features, resizable, functioning buttons, etc</div>
                         </div>
                         <div class="project-status-icons">
                             <img src="img/star-plus-outline.svg" alt="fav-icon" id="group-icons">
@@ -121,8 +123,8 @@
 
                     <div class="project-container">
                         <div class="project-contents">
-                            <div class="project-header">Project #6</div>
-                            <div class="project-body">Trying to create something really long and time consuming to do such as, a whole interactable dashboard. The dashboard will includes many features, resizable, functioning buttons, etc</div>
+                            <div class="pat-header">Project #6</div>
+                            <div class="pat-body">Trying to create something really long and time consuming to do such as, a whole interactable dashboard. The dashboard will includes many features, resizable, functioning buttons, etc</div>
                         </div>
                         <div class="project-status-icons">
                             <img src="img/star-plus-outline.svg" alt="fav-icon" id="group-icons">
@@ -135,23 +137,59 @@
 
             <div class="contents-components" id="announcements">
                 <div class="header-name">Announcements</div>
-                <div class="announcements-container">
-                    <div class="announcements-contents">
-                        <div class="announcements-header">Site Maintenance</div>
-                        <div class="announcements-body"></div>
-                    </div>
-                    <div class="announcements-contents">
-                        <div class="announcements-header">Community Share Day</div>
-                        <div class="announcements-body"></div>
-                    </div>
-                    <div class="announcements-contents">
-                        <div class="announcements-header">Updated Privacy Policy</div>
-                        <div class="announcements-body"></div>
+                <div class="announcement-background">
+                    <div class="announcements-container">
+                        <div class="announcements-contents" id="announ-1">
+                            <div class="pat-header pat-smaller-header">Site Maintenance</div>
+                            <div class="pat-body pat-center-body">The site will be offline from 12am ETC - 7pm ETC for maintenance purposes. For more information, please look <a>here</a></div>
+                        </div>
+
+                        <div class="announcements-contents" id="announ-2">
+                            <div class="pat-header pat-smaller-header">Community Share Day</div>
+                            <div class="pat-body pat-center-body">On Jan 17th 2056, there will be an online community event for everyone, in which we will be given away many prices.</div>
+                        </div>
+
+                        <div class="announcements-contents" id="announ-3">
+                            <div class="pat-header pat-smaller-header">Updated Privacy Policy</div>
+                            <div class="pat-body pat-center-body">We will update our privacy policy as soon as possible</div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="contents-components" id="trending">
                 <div class="header-name">Trending</div>
+                <div class="trending-background">
+                    <div class="trending-container">
+                        <div class="trending-contents">
+                            <img src="img/lul.jpg" alt="profile-pic-user" id="user-img-smaller2">
+                            <div class="together">
+                                <div class="trending-user-name">@tengen</div>
+                                <div class="trending-user-tag">World Domination</div>
+                            </div>
+                        </div>
+                        <div class="trending-contents">
+                            <img src="img/lul2.webp" alt="profile-pic-user" id="user-img-smaller2">
+                            <div class="together">
+                                <div class="trending-user-name">@morgan</div>
+                                <div class="trending-user-tag">Just Chilling</div>
+                            </div>
+                        </div>
+                        <div class="trending-contents">
+                            <img src="img/lul3.webp" alt="profile-pic-user" id="user-img-smaller2">
+                            <div class="together">
+                                <div class="trending-user-name">@kendali</div>
+                                <div class="trending-user-tag">I don't know</div>
+                            </div>
+                        </div>
+                        <div class="trending-contents">
+                            <img src="img/lul4.png" alt="profile-pic-user" id="user-img-smaller2">
+                            <div class="together">
+                                <div class="trending-user-name">@alex</div>
+                                <div class="trending-user-tag">What I'm Doing</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
